@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login/Signup Page</title>
+  <link rel="stylesheet" type="text/css" href="style/login.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Login/Signup Page</h1>
+    <form id="login-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="switch-to-signup">Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+    <form id="signup-form" style="display: none;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email-signup">Email:</label>
+      <input type="email" id="email-signup" name="email-signup" required>
+      <label for="password-signup">Password:</label>
+      <input type="password" id="password-signup" name="password-signup" required>
+      <button type="submit">Sign up</button>
+    </form>
+    <p id="switch-to-login">Already have an account? <a href="#" id="login-link">Login</a></p>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
